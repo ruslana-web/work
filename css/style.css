@@ -1820,8 +1820,72 @@ h4 {
           animation: fadeM 0.3s linear;
 }
 
+.faq {
+  padding-top: 90px;
+}
+
+.faq .faq__body .accordion {
+  padding: 26px 50px 26px 0;
+  font-family: BuyanBold;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(#D5FE40), color-stop(48.4%, #E8FF94), color-stop(97.59%, #D5FE40));
+  background: linear-gradient(90deg, #D5FE40 0%, #E8FF94 48.4%, #D5FE40 97.59%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+}
+
+.faq .faq__body .accordion:hover {
+  background-color: #ccc;
+}
+
+.faq .faq__body .accordion:after {
+  content: "";
+  background-image: url('data:image/svg+xml;utf8,<svg  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><line x1="10.5" y1="0" x2="10.5" y2="20" stroke="%23D5FE40" stroke-width="2"/><line x1="0" y1="10.5" x2="20" y2="10.5" stroke="%23D5FE40" stroke-width="2"/></svg>');
+  width: 20px;
+  height: 20px;
+  float: right;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  position: absolute;
+  top: 30px;
+  right: 11px;
+}
+
+.faq .faq__body .active:after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.faq .faq__body .panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+  color: #fff;
+  border-bottom: 1px solid #D5FE40;
+}
+
+.faq .faq__body .panel p {
+  padding: 0 26px 30px 30px;
+}
+
 .contact {
-  padding-top: 40px;
+  padding-top: 180px;
   padding-bottom: 80px;
   position: relative;
 }
@@ -1840,8 +1904,6 @@ h4 {
 
 .contact .contact__body {
   position: relative;
-  position: relative;
-  z-index: 12;
 }
 
 .contact .contact__body .contact__body-info .contact__body-info__social {
@@ -2153,6 +2215,28 @@ h4 {
 
   .portfolio .portfolio__body .modal-content {
     max-width: 90%;
+  }
+
+  .faq {
+    padding-top: 50px;
+  }
+
+  .faq .faq__body .accordion {
+    font-size: 20px;
+  }
+
+  .faq .faq__body .accordion:after {
+    width: 16px;
+    height: 16px;
+    top: 28px;
+  }
+
+  .faq .faq__body .panel p {
+    padding: 0 16px 30px 16px;
+  }
+
+  .contact {
+    padding-top: 90px;
   }
 
   .contact .ellipse-2 {
